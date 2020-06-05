@@ -2,7 +2,7 @@
 Use android MonkeyRunner to brute force the "My Eyes Only" photo locker.
 
 ## The Target
-Snapchat's "My Eyes Only" encrypted folder stores user-specified photos within.
+Snapchat's "My Eyes Only" encrypted photos folder.
 
 ## My Eyes Only Behavior:
 * To open the folder, you must enter a 4 digit passcode using only numbers. 
