@@ -28,5 +28,5 @@ Snapchat's "My Eyes Only" encrypted photos folder.
 
 My calculations are as follows *they may be wrong!:*
 
-2000 sets * 16 seconds set duration = 533.33 seconds total
+2000 sets * 16 seconds (set duration) = 533.33 seconds total
 533.33 seconds / 60 = 8.88 hours
