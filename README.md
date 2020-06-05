@@ -20,7 +20,7 @@ Snapchat's "My Eyes Only" encrypted photos folder.
 8. MonkeyRunner will tap the bottom middle icon to open the "Memories" section. From here, it will tap "My Eyes Only" and repeat starting at step 2.
 
 ## The Numbers
-### A "set" is defined as 5 passcode attempts that lead to a 60 sec cooldown / lockout period where we must log out and in again
+### A "set" is defined as 5 passcode attempts that lead to a 60 sec cooldown / lockout period where we must log out and in again to clear this cooldown
 * A 4 digit passcode at max is 10,000 different combinations.
 * We can enter 5 passcodes per "set"
 * This means, at max, we will have 2,000 passcode attempt "sets".
