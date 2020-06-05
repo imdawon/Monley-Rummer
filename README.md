@@ -17,4 +17,4 @@ Snapchat's "My Eyes Only" encrypted folder stores user-specified photos within.
 5. MonkeyRunner will tap the Settings icon.
 6. MonkeyRunner will scroll down to Log Out button and tap it. It will then tap the Log Out buttton in dialog box.
 7. MonkeyRunner will wait 3 seconds, then tap "Log in as <lastLoggedInUsernameHere>" and wait 7 seconds to authenticate.
-8. MonkeyRunner will tap the bottom middle icon to open the "Memories" section. From here, it will tap "My Eyes Only" and begin at step 2.
+8. MonkeyRunner will tap the bottom middle icon to open the "Memories" section. From here, it will tap "My Eyes Only" and repeat starting at step 2.
