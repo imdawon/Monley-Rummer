@@ -18,3 +18,14 @@ Snapchat's "My Eyes Only" encrypted photos folder.
 6. MonkeyRunner will scroll down to Log Out button and tap it. It will then tap the Log Out buttton in dialog box.
 7. MonkeyRunner will wait 3 seconds, then tap "Log in as <lastLoggedInUsernameHere>" and wait 7 seconds to authenticate.
 8. MonkeyRunner will tap the bottom middle icon to open the "Memories" section. From here, it will tap "My Eyes Only" and repeat starting at step 2.
+
+## The Numbers
+### A "set" is defined as 5 passcode attempts that lead to a 60 sec cooldown / lockout period where we must log out and in again
+* A 4 digit passcode at max is 10,000 different combinations.
+* We can enter 5 passcodes per "set"
+* This means, at max, we will have 2,000 passcode attempt "sets".
+* I estimate it will take 2 seconds to enter a set of passcodes. It will then take 2 seconds to log out, a 3 second wait, 7 seconds to log back in, and then 2 seconds to get back to enter another passcode set. This means our maximum amount of time it will take to brute force the correct passcode will be around 8.88 hours.
+
+My calculations are as follows *they may be wrong!:*
+2000 sets * 16 seconds set duration = 533.33 seconds total
+533.33 seconds / 60 = 8.88 hours
