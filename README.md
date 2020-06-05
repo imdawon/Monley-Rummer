@@ -24,7 +24,7 @@ Snapchat's "My Eyes Only" encrypted photos folder.
 * A 4 digit passcode at max is 10,000 different combinations.
 * We can enter 5 passcodes per "set"
 * This means, at max, we will have 2,000 passcode attempt "sets".
-* I estimate it will take 2 seconds to enter a set of passcodes. It will then take 2 seconds to log out, a 3 second wait, 7 seconds to log back in, and then 2 seconds to get back to enter another passcode set. This means our maximum amount of time it will take to brute force the correct passcode will be around 8.88 hours.
+* I estimate it will take 2 seconds to enter 5 passcode attempts. It will then take 2 seconds to log out, a 3 second wait, 7 seconds to log back in, and then 2 seconds to get back to enter another passcode set. This means our maximum amount of time it will take to brute force the correct passcode will be around 8.88 hours.
 
 My calculations are as follows *they may be wrong!:*
 2000 sets * 16 seconds set duration = 533.33 seconds total
