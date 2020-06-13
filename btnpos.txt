@@ -1,0 +1,19 @@
+2280x1080
+1   283 x 934
+2   538 x 934
+3   797 x 934
+4   283 x 1194
+5   538 x 1194
+6   797 x 1194
+7   283 x 1452
+8   538 x 1452
+9   797 x 1452
+0   538 x 1707 
+exit memories   85 x 188
+profile         78 x 180
+settings        994 x 189
+logout (after swipe up)     250 x 1955
+confirm logout  540 x 1300
+log in as       546 x 1220
+memories        343 x 1887
+My Eyes Only    900 x 300
