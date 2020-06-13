@@ -1,0 +1,19 @@
+1440x2880
+1 	 383 x 1159
+2 	 709 x 1159
+3 	 1035 x 1159
+4 	 383 x 1500
+5 	 717 x 1500
+6 	 1078 x 1500
+7 	 400 x 1836
+8 	 691 x 1836
+9 	 993 x 1836
+0 	 791 x 2117
+exit memories	118 x 234
+profile			118 x 234
+settings		1288 x 203
+logout (after swipe up) 689 x 2476
+confirm logout	507 x 1620
+log in as 		507 x 1550
+memories		710 x 2541
+Mx Eyes Only	1136 x 356
