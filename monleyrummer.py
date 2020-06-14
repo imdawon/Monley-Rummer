@@ -53,7 +53,9 @@ btn_my_eyes_only = (900,300)
 # presses its corresponding location
 # on the device.
 
-#monley_swipeup()
-# We'll need this function to perform
-# a swipe up so we can press the
-# logout button.
+# This function performs a
+# specific number of swipeups
+def monley_swipeup(swipes):
+    for x in range(1, swipes+1):
+        device.drag((700,1500), (700,900), .05, 3)
+        time.sleep(.3)
