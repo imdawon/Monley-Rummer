@@ -65,29 +65,26 @@ elif args.device == "pixel":
     btn_memories = (710,2541)
     btn_my_eyes_only = (1136,356)
 
+# monley_inputpin() needs this 
+# in order to convert numbers as
+# a string into buttons.
+button = {
+    1: btn1,
+    2: btn2,
+    3: btn3,
+    4: btn4,
+    5: btn5,
+    6: btn6,
+    7: btn7,
+    8: btn8,
+    9: btn9,
+    0: btn0
+}
+
 def monley_inputpin(pin):
     for number in pin:
         print(number)
-        if number == "1":
-            device.touch(btn1[0], btn1[1], MonkeyDevice.DOWN_AND_UP)
-        elif number == "2":
-            device.touch(btn2[0], btn2[1], MonkeyDevice.DOWN_AND_UP)
-        elif number == "3":
-            device.touch(btn3[0], btn3[1], MonkeyDevice.DOWN_AND_UP)
-        elif number == "4":
-            device.touch(btn4[0], btn4[1], MonkeyDevice.DOWN_AND_UP)
-        elif number == "5":
-            device.touch(btn5[0], btn5[1], MonkeyDevice.DOWN_AND_UP)
-        elif number == "6":
-            device.touch(btn6[0], btn6[1], MonkeyDevice.DOWN_AND_UP)
-        elif number == "7":
-            device.touch(btn7[0], btn7[1], MonkeyDevice.DOWN_AND_UP)
-        elif number == "8":
-            device.touch(btn8[0], btn8[1], MonkeyDevice.DOWN_AND_UP)
-        elif number == "9":
-            device.touch(btn9[0], btn9[1], MonkeyDevice.DOWN_AND_UP)
-        elif number == "0":
-            device.touch(btn0[0], btn0[1], MonkeyDevice.DOWN_AND_UP)
+        device.touch(button[int(number)][0], button[int(number)][1], MonkeyDevice.DOWN_AND_UP)
         time.sleep(.1)
 
 # This function takes a button name and
@@ -125,6 +122,7 @@ if not args.simulate:
 #
 f = open("pincodes.txt","r")
 pincodes = f.readlines()
+pincodes = [endl.strip() for endl in pincodes]
 f.close()
 
 for x in range(0,5):
