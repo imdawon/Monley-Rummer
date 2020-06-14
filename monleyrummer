@@ -1,0 +1,3 @@
+#!/bin/bash
+
+$HOME/Android/Sdk/tools/bin/monkeyrunner monleyrummer.py "$@"
