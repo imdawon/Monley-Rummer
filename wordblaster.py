@@ -1,10 +1,10 @@
 #!/usr/bin/env monkeyrunner                                                         
 #
-# This is a Snapchat "smartforcer" for Jython 2.5.3
+# This is a Wordscapes "smartforcer" for Jython 2.5.3
 # Version 2.0
 #
-# Created by Matt Wilson & Dawson Hensel
-# June 4, 2020
+# Created by Matt Wilson
+# January 8, 2020
 #
 #
 #
@@ -12,7 +12,7 @@
 #
 # - Android SDK
 # - Java Development Kit 8
-# - Samsung Galaxy S10, Pixel 2 XL
+# - Samsung Galaxy S10 (support for more devices to come)
 #
 #
 #
@@ -30,11 +30,11 @@
 #
 # 4) Open a Wordscapes level on your phone.
 #
-# 5) run "monkeyrunner monleyrum.py"
+# 5) run "monkeyrunner wordblaster.py"
 #
 #
 #
-#                     PASSCODE LAYOUT
+#                     SIX LETTER LAYOUT
 #
 #                             0
 #                        (540, 1500)
@@ -116,9 +116,21 @@ if __name__ == "__main__":
         draw_y = [0,0,0,0,0,0,0]
 
         # Load the appropriate file depending on the length of word
-        drawpath_file = 'drawpath/pincodes.txt'
-        dict_file = 'dictionary/dict.txt'
+        drawpath_file = ''
+        dict_file = ''
 
+        if letters == 3:
+            drawpath_file = 'drawpaths/6circle_3letter.txt'
+            dict_file     = 'dictionaries/3dict.txt'
+        elif letters == 4:
+            drawpath_file = 'drawpaths/6circle_4letter.txt'
+            dict_file     = 'dictionaries/4dict.txt'
+        elif letters == 5:
+            drawpath_file = 'drawpaths/6circle_5letter.txt'
+            dict_file     = 'dictionaries/5dict.txt'
+        elif letters == 6:
+            drawpath_file = 'drawpaths/6circle_6letter.txt'
+            dict_file     = 'dictionaries/6dict.txt'
         f1 = open(drawpath_file, "r")
         f2 = open(dict_file    , "r")
         
