@@ -1,10 +1,10 @@
 #!/usr/bin/env monkeyrunner                                                         
 #
-# This is a Wordscapes "smartforcer" for Jython 2.5.3
+# This is a Snapchat "smartforcer" for Jython 2.5.3
 # Version 2.0
 #
-# Created by Matt Wilson
-# January 8, 2020
+# Created by Matt Wilson & Dawson Hensel
+# June 4, 2020
 #
 #
 #
@@ -12,7 +12,7 @@
 #
 # - Android SDK
 # - Java Development Kit 8
-# - Samsung Galaxy S10 (support for more devices to come)
+# - Samsung Galaxy S10, Pixel 2 XL
 #
 #
 #
@@ -30,11 +30,11 @@
 #
 # 4) Open a Wordscapes level on your phone.
 #
-# 5) run "monkeyrunner wordblaster.py"
+# 5) run "monkeyrunner monleyrum.py"
 #
 #
 #
-#                     SIX LETTER LAYOUT
+#                     PASSCODE LAYOUT
 #
 #                             0
 #                        (540, 1500)
