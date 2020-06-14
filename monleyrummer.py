@@ -113,6 +113,7 @@ def monley_swipeup(swipes):
 
 # Connect MonkeyRunner to device
 if not args.simulate:
+    print("Waiting for device connection...")
     device = MonkeyRunner.waitForConnection()
 
 # Load pin codes into memory
