@@ -142,28 +142,28 @@ for x in range(attempts, max_attempts):
     pincode_index += 1
 
 monley_pressbutton(btn_exit_memories)
-time.sleep(5)
+time.sleep(2)
 
 monley_pressbutton(btn_profile)
-time.sleep(5)
+time.sleep(2)
 
 monley_pressbutton(btn_settings)
-time.sleep(5)
+time.sleep(2)
 
 monley_swipeup(3)
 
 monley_pressbutton(btn_logout)
-time.sleep(5)
+time.sleep(2)
 
 monley_pressbutton(btn_logout_confirm)
 time.sleep(5)
 
 monley_pressbutton(btn_log_in_as)
-time.sleep(5)
+time.sleep(6)
 
 monley_pressbutton(btn_memories)
-time.sleep(5)
+time.sleep(2)
 
 monley_pressbutton(btn_my_eyes_only)
-time.sleep(5)
+time.sleep(2)
 
