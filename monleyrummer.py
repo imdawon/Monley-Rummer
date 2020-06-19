@@ -129,41 +129,43 @@ f.close()
 # Index of current pincode in pincode array
 pincode_index = 0
 
-attempts = 0
 max_attempts = 4
 
-for x in range(attempts, max_attempts):
-    print ("PIN: " + pincodes[pincode_index])
+for x in range(0, 5):
+    attempts = 0
+
+    for x in range(attempts, max_attempts):
+        print ("PIN: " + pincodes[pincode_index])
     
-    if not args.simulate:
-        monley_inputpin(pincodes[pincode_index])
-        time.sleep(1)
+        if not args.simulate:
+            monley_inputpin(pincodes[pincode_index])
+            time.sleep(1)
 
-    pincode_index += 1
+        pincode_index += 1
 
-monley_pressbutton(btn_exit_memories)
-time.sleep(2)
+    monley_pressbutton(btn_exit_memories)
+    time.sleep(2)
 
-monley_pressbutton(btn_profile)
-time.sleep(2)
+    monley_pressbutton(btn_profile)
+    time.sleep(2)
 
-monley_pressbutton(btn_settings)
-time.sleep(2)
+    monley_pressbutton(btn_settings)
+    time.sleep(2)
 
-monley_swipeup(3)
+    monley_swipeup(3)
 
-monley_pressbutton(btn_logout)
-time.sleep(2)
+    monley_pressbutton(btn_logout)
+    time.sleep(2)
 
-monley_pressbutton(btn_logout_confirm)
-time.sleep(5)
+    monley_pressbutton(btn_logout_confirm)
+    time.sleep(5)
 
-monley_pressbutton(btn_log_in_as)
-time.sleep(6)
+    monley_pressbutton(btn_log_in_as)
+    time.sleep(6)
 
-monley_pressbutton(btn_memories)
-time.sleep(2)
+    monley_pressbutton(btn_memories)
+    time.sleep(2)
 
-monley_pressbutton(btn_my_eyes_only)
-time.sleep(2)
+    monley_pressbutton(btn_my_eyes_only)
+    time.sleep(2)
 
