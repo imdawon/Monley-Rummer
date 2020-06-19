@@ -129,7 +129,7 @@ f.close()
 # Index of current pincode in pincode array
 pincode_index = 0
 
-max_attempts = 4
+max_attempts = 5
 
 for x in range(0, 5):
     attempts = 0
