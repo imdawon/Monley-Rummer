@@ -3,6 +3,7 @@
 
 import time #time.sleep(seconds)
 import argparse
+import random
 
 parser = argparse.ArgumentParser(description='Bruteforce Snapchat\'s my eyes only pin code')
 parser.add_argument('--simulate',
@@ -85,7 +86,7 @@ def monley_inputpin(pin):
     for number in pin:
         print(number)
         device.touch(button[int(number)][0], button[int(number)][1], MonkeyDevice.DOWN_AND_UP)
-        time.sleep(.25)
+        time.sleep(round(random.random(), 2))
 
 # This function takes a button name and
 # presses its corresponding location
@@ -102,7 +103,7 @@ def monley_swipeup():
 def monley_swipeup(swipes):
     for x in range(1, swipes+1):
         device.drag((700,1500), (700,900), .05, 3)
-        time.sleep(.3)
+        time.sleep(.7)
 
 
 
