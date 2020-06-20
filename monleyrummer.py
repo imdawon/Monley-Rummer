@@ -145,28 +145,37 @@ for x in range(0, 5):
         pincode_index += 1
 
     monley_pressbutton(btn_exit_memories)
+    print("Pressed exit memories...")
     time.sleep(2)
 
     monley_pressbutton(btn_profile)
+    print("Pressed profile...")
     time.sleep(2)
 
     monley_pressbutton(btn_settings)
+    print("Pressed settings...")
     time.sleep(2)
 
     monley_swipeup(3)
+    print("Swiping up 3 times...")
 
     monley_pressbutton(btn_logout)
+    print("Pressed logout...")
     time.sleep(2)
 
     monley_pressbutton(btn_logout_confirm)
+    print("Pressed confirm logout")
     time.sleep(5)
 
     monley_pressbutton(btn_log_in_as)
+    print("Pressed log in as...")
     time.sleep(6)
 
     monley_pressbutton(btn_memories)
+    print("Pressed memories")
     time.sleep(2)
 
     monley_pressbutton(btn_my_eyes_only)
+    print("Pressed my eyes only")
     time.sleep(2)
 
