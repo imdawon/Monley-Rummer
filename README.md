@@ -7,8 +7,7 @@ Snapchat's "My Eyes Only" (sometimes reffered to as MEO) encrypted photos folder
 ## My Eyes Only (MEO) Behavior:
 * To open the folder, you must enter a 4 digit passcode using only numbers. 
 * After 5 failed passcode attempts, the folder will deny any additional access attempts for 60 seconds. 
-**NOTE: We are attempting 4 logins per set. Once you enter 5 incorrect passcodes, the following passcode input, even if it is correct, will still lock you out and deny future passcode submissions.**
-* After 60 seconds are up, you again can attempt an additonal **4** times, leading to another 60 second lockout.
+* **NOTE: We are attempting 4 logins per set. Once you enter 5 incorrect passcodes, the following passcode input, even if it is correct, will still lock you out and deny future passcode submissions.**
 
 ### My Eyes Only Protection (MEO) Features ###
 * Using traditional MonkeyRunner "MonkeyDevice.DOWN_AND_UP" function is detected in someway by Snapchat. Once you do 10 login attempts, which includes 2 logouts, Snapchat will lock MEO as if we had entered 5 wrong passcodes
