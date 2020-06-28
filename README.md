@@ -1,3 +1,7 @@
+# This project is no longer maintained due to the following:
+* Snapchat detects if you attempt to enter passwords in any brute-forcing way, and will lock you out for 1 minute following 10 incorrect passcode guesses.
+* We wouldn't have any way of verifying that a passcode was correct, as MonekyRunner can't monitor the state of the current application.
+
 # The Purpose of MonleyRummer
 Use android MonkeyRunner to brute force the "My Eyes Only" photo locker.
 
